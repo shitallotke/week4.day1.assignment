@@ -35,9 +35,13 @@ public class LeafGround {
 		//Get the progress value of 'Learn to interact with Elements'
 		System.out.println("Progress value of Learn to interact with Elements:");
 		
-		
-		
-		
+		for(int i=3;i<=rowsize-1;i++) {
+			for(int j=1;j<=columnsize;j++) {
+			String data =	driver.findElement(By.xpath("//table/tbody/tr["+i+"]/td["+j+"]")).getText();
+			System.out.print(data + " ");
+			}
+			System.out.println();
+		}
 			
 			
 	
